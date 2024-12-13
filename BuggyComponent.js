@@ -1,0 +1,1 @@
+This React component uses the wrong lifecycle method to update the state after a prop change.  The component attempts to update its state in `componentDidMount`, which only runs once after the component is mounted.  Subsequent prop changes won't trigger an update, resulting in stale data.
